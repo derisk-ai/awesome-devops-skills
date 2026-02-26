@@ -3,6 +3,8 @@
 > 自动收集的DevOps和云原生领域优秀Skills/MCP仓库
 > 
 > 最后更新：2026-02-26 23:38 CST | 已收录 **46** 个仓库
+> 
+> [English Version](./README_EN.md)
 
 ---
 
