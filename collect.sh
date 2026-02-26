@@ -284,7 +284,7 @@ sed -i '' "s/UPDATE_TIME/$DATE/g" "$README_FILE"
 sed -i '' "s/REPO_COUNT/$REPO_COUNT/g" "$README_FILE"
 sed -i '' "s/SCAN_TIME/$DATE/g" "$README_FILE"
 
-# Git操作 - 使用分支工作流
+# Git操作 - 使用分支工作流（一条一次模式）
 echo "📝 提交变更..."
 cd "$PROJECT_DIR"
 
@@ -294,28 +294,60 @@ if git diff --quiet HEAD && git diff --cached --quiet HEAD; then
   exit 0
 fi
 
-# 创建新分支
-BRANCH_NAME="auto-update/$(date '+%Y-%m-%d-%H%M%S')"
-echo "🔀 创建新分支: $BRANCH_NAME"
-git checkout -b "$BRANCH_NAME"
-
-# 添加并提交变更
-git add README.md README_EN.md data/ 2>/dev/null || git add README.md data/
-git commit -m "🤖 自动更新: $DATE - 发现 $TOTAL_FOUND 个新仓库"
-
-# 推送到远程（使用SSH）
-if git remote get-url origin > /dev/null 2>&1; then
-  echo "📤 推送到远程分支: $BRANCH_NAME"
-  git push -u origin "$BRANCH_NAME" && echo "✅ 推送成功" || echo "⚠️ 推送失败"
-  echo ""
-  echo "📝 请在GitHub上创建Pull Request合并此分支到main"
-  echo "   分支: $BRANCH_NAME"
+# 一条一次模式：逐个处理新发现的仓库
+if [ -s "$TEMP_DIR/new_findings.md" ]; then
+  # 获取第一个新发现的仓库
+  FIRST_REPO=$(head -1 "$TEMP_DIR/new_findings.md")
+  REPO_NAME=$(echo "$FIRST_REPO" | sed 's/.*\[\([^]]*\)\].*/\1/')
+  
+  echo "🎯 一条一次模式：处理第一个仓库 - $REPO_NAME"
+  
+  # 创建专门的分支
+  BRANCH_NAME="auto-update/repo-$(echo "$REPO_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | cut -c1-30)-$(date '+%Y%m%d%H%M%S')"
+  echo "🔀 创建新分支: $BRANCH_NAME"
+  git checkout -b "$BRANCH_NAME"
+  
+  # 只添加README和该仓库的数据
+  git add README.md data/
+  git commit -m "🤖 Add repo: $REPO_NAME - $DATE"
+  
+  # 推送到远程
+  if git remote get-url origin > /dev/null 2>&1; then
+    echo "📤 推送到远程分支: $BRANCH_NAME"
+    git push -u origin "$BRANCH_NAME"
+    
+    # 创建PR
+    GITHUB_TOKEN=$(cat .github-token 2>/dev/null || echo "")
+    if [ -n "$GITHUB_TOKEN" ]; then
+      PR_TITLE="🤖 Add repo: $REPO_NAME"
+      PR_BODY="Auto-discovered DevOps/MCP repository\n\n**Repository:** $FIRST_REPO\n\n**Discovered:** $DATE\n\nThis PR adds one new repository to the collection."
+      
+      curl -s -X POST \
+        -H "Authorization: token $GITHUB_TOKEN" \
+        -H "Accept: application/vnd.github.v3+json" \
+        "https://api.github.com/repos/derisk-ai/awesome-devops-skills/pulls" \
+        -d "{\"title\":\"$PR_TITLE\",\"head\":\"$BRANCH_NAME\",\"base\":\"main\",\"body\":\"$PR_BODY\"}" > /dev/null 2>&1 && \
+        echo "✅ PR创建成功" || echo "⚠️ PR创建失败"
+    fi
+    
+    echo ""
+    echo "📝 分支: $BRANCH_NAME"
+  else
+    echo "⚠️  未配置远程仓库，跳过推送"
+  fi
+  
+  # 切换回main分支
+  git checkout main || git checkout master || true
+  
+  # 保存剩余的仓库到待处理文件
+  tail -n +2 "$TEMP_DIR/new_findings.md" > "$TEMP_DIR/pending_repos.md" 2>/dev/null || true
+  PENDING_COUNT=$(wc -l < "$TEMP_DIR/pending_repos.md" 2>/dev/null | tr -d ' ' || echo "0")
+  if [ "$PENDING_COUNT" -gt 0 ]; then
+    echo "⏳ 还有 $PENDING_COUNT 个仓库待处理，下次运行将继续"
+  fi
 else
-  echo "⚠️  未配置远程仓库，跳过推送"
+  echo "✅ 无新仓库需要处理"
 fi
 
-# 切换回main分支
-git checkout main || git checkout master || true
-
-echo "✅ 完成! 本次发现 $TOTAL_FOUND 个新仓库，总计 $REPO_COUNT 个"
+echo "✅ 完成! 本次处理 1 个新仓库，总计 $REPO_COUNT 个"
 echo "📄 结果已保存到: $README_FILE"
