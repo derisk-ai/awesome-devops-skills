@@ -284,18 +284,38 @@ sed -i '' "s/UPDATE_TIME/$DATE/g" "$README_FILE"
 sed -i '' "s/REPO_COUNT/$REPO_COUNT/g" "$README_FILE"
 sed -i '' "s/SCAN_TIME/$DATE/g" "$README_FILE"
 
-# Git操作
+# Git操作 - 使用分支工作流
 echo "📝 提交变更..."
 cd "$PROJECT_DIR"
-git add README.md data/ 2>/dev/null || git add README.md
-git commit -m "🤖 自动更新: $DATE - 发现 $TOTAL_FOUND 个新仓库" || echo "无变更可提交"
 
-# 推送（如果有配置远程）
+# 检查是否有变更
+if git diff --quiet HEAD && git diff --cached --quiet HEAD; then
+  echo "✅ 无新变更，跳过提交"
+  exit 0
+fi
+
+# 创建新分支
+BRANCH_NAME="auto-update/$(date '+%Y-%m-%d-%H%M%S')"
+echo "🔀 创建新分支: $BRANCH_NAME"
+git checkout -b "$BRANCH_NAME"
+
+# 添加并提交变更
+git add README.md README_EN.md data/ 2>/dev/null || git add README.md data/
+git commit -m "🤖 自动更新: $DATE - 发现 $TOTAL_FOUND 个新仓库"
+
+# 推送到远程（使用SSH）
 if git remote get-url origin > /dev/null 2>&1; then
-  git push origin main 2>/dev/null || git push origin master 2>/dev/null || echo "⚠️ 推送失败，请检查远程仓库配置"
+  echo "📤 推送到远程分支: $BRANCH_NAME"
+  git push -u origin "$BRANCH_NAME" && echo "✅ 推送成功" || echo "⚠️ 推送失败"
+  echo ""
+  echo "📝 请在GitHub上创建Pull Request合并此分支到main"
+  echo "   分支: $BRANCH_NAME"
 else
   echo "⚠️  未配置远程仓库，跳过推送"
 fi
+
+# 切换回main分支
+git checkout main || git checkout master || true
 
 echo "✅ 完成! 本次发现 $TOTAL_FOUND 个新仓库，总计 $REPO_COUNT 个"
 echo "📄 结果已保存到: $README_FILE"
