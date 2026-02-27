@@ -300,7 +300,7 @@ echo "🔀 创建新分支: $BRANCH_NAME"
 git checkout -b "$BRANCH_NAME"
 
 # 添加并提交变更
-git add README.md README_EN.md data/ 2>/dev/null || git add README.md data/
+git add README.md README_zh.md data/
 git commit -m "🤖 自动更新: $DATE - 发现 $TOTAL_FOUND 个新仓库"
 
 # 推送到远程（使用SSH）
