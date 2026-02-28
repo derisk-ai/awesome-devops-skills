@@ -2,7 +2,7 @@
 
 > 自动收集的DevOps和云原生领域优秀Skills/MCP仓库
 > 
-> 最后更新：2026-02-27 09:00:30 CST
+> 最后更新：2026-02-28 09:00:16 CST
 
 ---
 
@@ -25,22 +25,20 @@
 
 本次扫描新发现的仓库：
 
-- [TRAE-Agents](https://github.com/HighMark-31) - A collection of specialized TRAE Agents for software development, frontend, backend, automation, UI/UX, SEO, and DevOps. Each agent is ready to generate code, templates, scripts, and advanced workflows. Direct installation links included. ⭐ 91
-- [vscode-aks-tools](https://github.com/Azure) - Visual Studio Code extension for Azure Kubernetes Service ⭐ 63
-- [kube-agentic-networking](https://github.com/kubernetes-sigs) - Agentic networking policies and governance for agents and tools in Kubernetes ⭐ 54
-- [sig-windows-tools](https://github.com/kubernetes-sigs) - Repository for tools and artifacts related to the sig-windows charter in Kubernetes. Scripts to assist kubeadm and wincat and flannel will be hosted here. ⭐ 131
-- [awesome-openclaw-agents](https://github.com/mergisi) - Curated list of AI agent templates for OpenClaw. Ready-to-use SOUL.md configs for productivity, development, marketing, and business agents. Deploy with CrewClaw. ⭐ 41
-- [mcp-server-tester](https://github.com/gleanwork) - Playwright-based testing and eval framework for MCP servers with LLM-as-a-judge ⭐ 4
-- [instruments-mcp-server](https://github.com/nemanjavlahovic) - MCP server for Xcode Instruments — AI agents get structured performance profiling (CPU, SwiftUI, memory, hitches) instead of raw xctrace XML ⭐ 4
-- [FastSkills](https://github.com/nj19257) -  ⚡ MCP server that brings Agent Skills (the open standard behind Claude Code, OpenClaw & nanobot) to any MCP-compatible agent. Discover, load, create & execute skills. ⭐ 4
-- [livewire-flux-mcp](https://github.com/leMaur) - MCP server for Livewire Flux ⭐ 5
-- [mcp](https://github.com/microsoft) - Catalog of official Microsoft MCP (Model Context Protocol) server implementations for AI-powered data access and tool integration ⭐ 2657
-- [pentest-mcp-server](https://github.com/exjskdjsdfks) - ⚙️ Enable AI agents to conduct autonomous penetration testing on any Linux distribution with a persistent and robust Model Context Protocol server. ⭐ 7
-- [mirroir-mcp](https://github.com/jfarcand) - MCP server for controlling a real iPhone via macOS iPhone Mirroring...and any MacOs app. Screenshot, tap, swipe, type — from any MCP client. ⭐ 18
-- [brave-search-mcp](https://github.com/mikechao) - An MCP Server implementation that integrates the Brave Search API, providing, Web Search, Local Points of Interest Search, Image Search, Video Search and News Search capabilities ⭐ 100
-- [Create-MCP](https://github.com/AnnieBabs) - 🚀 Generate and extend production-ready Model Context Protocol (MCP) servers with a modern CLI tool that showcases all MCP features in one cohesive example. ⭐ 4
-- [autumn-mcp](https://github.com/Nickha124) - 🛠️ Create MCP servers easily with the autumn framework, supporting stdio protocol for efficient tool development. ⭐ 4
-- [full-stack-ai-agent-template](https://github.com/vstorm-co) - Production-ready Full-Stack AI Agent Template — FastAPI + Next.js with 5 AI frameworks (PydanticAI, LangChain, LangGraph, CrewAI, DeepAgents), WebSocket streaming, tool approval UI, auth, multi-DB, observability, and 20+ integrations. ⭐ 587
+- [fast-mcp-telegram](https://github.com/leshchenko1979) - Telegram MCP Server and HTTP-MTProto bridge | Multi-user auth, intelligent search, file sending, web setup | Docker & PyPI ready ⭐ 26
+- [ai-coding-tools](https://github.com/shopwareLabs) - Claude Code plugin marketplace for Shopware development. Provides MCP servers, skills, agents, hooks, and commands to integrate development tools directly into your AI coding workflow. ⭐ 6
+- [codebase-memory-mcp](https://github.com/DeusData) - MCP server that indexes your codebase into a persistent knowledge graph. 12 languages, sub-ms queries, 99% fewer tokens than grep. Single Go binary, no Docker, no API keys. ⭐ 38
+- [mcp_agent_mail_rust](https://github.com/Dicklesworthstone) - Rust MCP server for multi-agent coordination: 34 tools, Git-backed archive, SQLite indexing, advisory file locks, and an interactive TUI console ⭐ 22
+- [camofox-mcp](https://github.com/redf0x1) - Anti-detection browser MCP server for AI agents — navigate, interact, and automate the web without getting blocked ⭐ 28
+- [mcp-gateway-registry](https://github.com/agentic-community) - Enterprise-ready MCP Gateway & Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for both autonomous AI agents and AI coding assistants. Transform scattered MCP server chaos into governed, auditable tool access with Keycloak/Entra integration. ⭐ 459
+- [memory-journal-mcp](https://github.com/neverinfamous) - MCP server for AI Context + Project Intelligence. Overcome disconnected AI sessions with persistent project memory, triple search, knowledge graphs, and GitHub integration (Actions, Insights, Issues, Kanban Boards, Milestones, and PRs). Uses Tool Filtering. HTTP/SSE Transport Available. ⭐ 11
+- [wenyan-mcp](https://github.com/caol64) - 文颜 MCP Server 可以让 AI 自动将 Markdown 文章排版后发布至微信公众号。 ⭐ 1045
+- [word-mcp-live](https://github.com/ykarapazar) - MCP server for Microsoft Word with live COM automation - 102 tools ⭐ 5
+- [mcpshim](https://github.com/mcpshim) - Turn remote MCP servers into local command workflows. ⭐ 41
+- [agentsecrets](https://github.com/The-17) - Secrets management built for AI agents ⭐ 23
+- [terraform-mcp-server](https://github.com/hashicorp) - The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development. ⭐ 1249
+- [agentscope-runtime](https://github.com/agentscope-ai) - A production-ready runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and broad framework compatibility. ⭐ 479
+- [superagentx](https://github.com/superagentxai) - Move from idea to production in hours with policy-driven autonomous AI agents. Unified Control Plane: Centralised tools, MCPs, models, data, and policies with consistent observability and governance. ⭐ 182
 
 ---
 
@@ -142,8 +140,8 @@ _暂无收录_
 
 ### 当前状态
 
-- 📊 已收集仓库数: 62
-- 🕐 最后扫描: 2026-02-27 09:00:30 CST
+- 📊 已收集仓库数: 76
+- 🕐 最后扫描: 2026-02-28 09:00:16 CST
 - 🔄 扫描频率: 每天一次 (09:00 CST)
 
 ### 技术栈
