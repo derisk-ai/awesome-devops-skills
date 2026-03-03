@@ -2,7 +2,7 @@
 
 > 自动收集的DevOps和云原生领域优秀Skills/MCP仓库
 > 
-> 最后更新：2026-02-28 09:00:16 CST
+> 最后更新：2026-03-03 09:00:23 CST
 
 ---
 
@@ -25,20 +25,20 @@
 
 本次扫描新发现的仓库：
 
-- [fast-mcp-telegram](https://github.com/leshchenko1979) - Telegram MCP Server and HTTP-MTProto bridge | Multi-user auth, intelligent search, file sending, web setup | Docker & PyPI ready ⭐ 26
-- [ai-coding-tools](https://github.com/shopwareLabs) - Claude Code plugin marketplace for Shopware development. Provides MCP servers, skills, agents, hooks, and commands to integrate development tools directly into your AI coding workflow. ⭐ 6
-- [codebase-memory-mcp](https://github.com/DeusData) - MCP server that indexes your codebase into a persistent knowledge graph. 12 languages, sub-ms queries, 99% fewer tokens than grep. Single Go binary, no Docker, no API keys. ⭐ 38
-- [mcp_agent_mail_rust](https://github.com/Dicklesworthstone) - Rust MCP server for multi-agent coordination: 34 tools, Git-backed archive, SQLite indexing, advisory file locks, and an interactive TUI console ⭐ 22
-- [camofox-mcp](https://github.com/redf0x1) - Anti-detection browser MCP server for AI agents — navigate, interact, and automate the web without getting blocked ⭐ 28
-- [mcp-gateway-registry](https://github.com/agentic-community) - Enterprise-ready MCP Gateway & Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for both autonomous AI agents and AI coding assistants. Transform scattered MCP server chaos into governed, auditable tool access with Keycloak/Entra integration. ⭐ 459
-- [memory-journal-mcp](https://github.com/neverinfamous) - MCP server for AI Context + Project Intelligence. Overcome disconnected AI sessions with persistent project memory, triple search, knowledge graphs, and GitHub integration (Actions, Insights, Issues, Kanban Boards, Milestones, and PRs). Uses Tool Filtering. HTTP/SSE Transport Available. ⭐ 11
-- [wenyan-mcp](https://github.com/caol64) - 文颜 MCP Server 可以让 AI 自动将 Markdown 文章排版后发布至微信公众号。 ⭐ 1045
-- [word-mcp-live](https://github.com/ykarapazar) - MCP server for Microsoft Word with live COM automation - 102 tools ⭐ 5
-- [mcpshim](https://github.com/mcpshim) - Turn remote MCP servers into local command workflows. ⭐ 41
-- [agentsecrets](https://github.com/The-17) - Secrets management built for AI agents ⭐ 23
-- [terraform-mcp-server](https://github.com/hashicorp) - The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development. ⭐ 1249
-- [agentscope-runtime](https://github.com/agentscope-ai) - A production-ready runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and broad framework compatibility. ⭐ 479
-- [superagentx](https://github.com/superagentxai) - Move from idea to production in hours with policy-driven autonomous AI agents. Unified Control Plane: Centralised tools, MCPs, models, data, and policies with consistent observability and governance. ⭐ 182
+- [claude-doctor-skill](https://github.com/SomeStay07) - 46 automated checks across 6 layers. Project health audit skill for Claude Code. Security first. Zero dependencies. ⭐ 6
+- [awesome-k8s-tools](https://github.com/vilaca) - List of container/k8s tools. ⭐ 1030
+- [terraform-azurerm-keyvault-acmebot](https://github.com/shibayan) - Terraform Module for Key Vault Acmebot ⭐ 34
+- [cd3-automation-toolkit](https://github.com/oracle-devrel) - The CD3 Automation Toolkit generates Terraform modules from a design spec in an Excel sheet.  It also enables a user to export an OCI tenancy into Excel and corresponding TF modules (and associated tfvars) ⭐ 63
+- [mcp-sumologic](https://github.com/samwang0723) - MCP server for Sumologic ⭐ 8
+- [mcp-server-shortcut](https://github.com/useshortcut) - The MCP server for Shortcut ⭐ 87
+- [agentpool](https://github.com/phil65) - A unified agent orchestration hub that lets you configure and manage multiple AI agents (native, ACP, AGUI, Claude Code) via YAML, and exposes them through standardized protocols (ACP/OpenCode Server). ⭐ 97
+- [jcodemunch-mcp](https://github.com/jgravelle) - Token-efficient MCP server for GitHub source code exploration via tree-sitter AST parsing ⭐ 83
+- [agentgateway](https://github.com/agentgateway) - Next Generation Agentic Proxy for AI Agents and MCP servers ⭐ 1843
+- [genai-toolbox](https://github.com/googleapis) - MCP Toolbox for Databases is an open source MCP server for databases. ⭐ 13235
+- [mcp](https://github.com/balldontlie-api) - The official mcp-server for BALLDONTLIE ⭐ 5
+- [mcp-dotnet-samples](https://github.com/microsoft) - A comprehensive set of samples of creating and using MCP servers and clients with .NET ⭐ 156
+- [skills](https://github.com/microsoft) - Skills, MCP servers, Custom Agents, Agents.md for SDKs to ground Coding Agents ⭐ 1579
+- [azure-devops-mcp-server](https://github.com/Jordiag) - Exposes Azure DevOps functionality via MCP: Boards, Repos, Pipelines, Artifacts, Test Plans, and Wiki tools for AI agents. ⭐ 13
 
 ---
 
@@ -140,8 +140,8 @@ _暂无收录_
 
 ### 当前状态
 
-- 📊 已收集仓库数: 76
-- 🕐 最后扫描: 2026-02-28 09:00:16 CST
+- 📊 已收集仓库数: 91
+- 🕐 最后扫描: 2026-03-03 09:00:23 CST
 - 🔄 扫描频率: 每天一次 (09:00 CST)
 
 ### 技术栈
