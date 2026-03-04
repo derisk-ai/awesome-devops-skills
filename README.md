@@ -2,7 +2,7 @@
 
 > 自动收集的DevOps和云原生领域优秀Skills/MCP仓库
 > 
-> 最后更新：2026-03-03 09:00:23 CST
+> 最后更新：2026-03-04 09:00:23 CST
 
 ---
 
@@ -25,20 +25,19 @@
 
 本次扫描新发现的仓库：
 
-- [claude-doctor-skill](https://github.com/SomeStay07) - 46 automated checks across 6 layers. Project health audit skill for Claude Code. Security first. Zero dependencies. ⭐ 6
-- [awesome-k8s-tools](https://github.com/vilaca) - List of container/k8s tools. ⭐ 1030
-- [terraform-azurerm-keyvault-acmebot](https://github.com/shibayan) - Terraform Module for Key Vault Acmebot ⭐ 34
-- [cd3-automation-toolkit](https://github.com/oracle-devrel) - The CD3 Automation Toolkit generates Terraform modules from a design spec in an Excel sheet.  It also enables a user to export an OCI tenancy into Excel and corresponding TF modules (and associated tfvars) ⭐ 63
-- [mcp-sumologic](https://github.com/samwang0723) - MCP server for Sumologic ⭐ 8
-- [mcp-server-shortcut](https://github.com/useshortcut) - The MCP server for Shortcut ⭐ 87
-- [agentpool](https://github.com/phil65) - A unified agent orchestration hub that lets you configure and manage multiple AI agents (native, ACP, AGUI, Claude Code) via YAML, and exposes them through standardized protocols (ACP/OpenCode Server). ⭐ 97
-- [jcodemunch-mcp](https://github.com/jgravelle) - Token-efficient MCP server for GitHub source code exploration via tree-sitter AST parsing ⭐ 83
-- [agentgateway](https://github.com/agentgateway) - Next Generation Agentic Proxy for AI Agents and MCP servers ⭐ 1843
-- [genai-toolbox](https://github.com/googleapis) - MCP Toolbox for Databases is an open source MCP server for databases. ⭐ 13235
-- [mcp](https://github.com/balldontlie-api) - The official mcp-server for BALLDONTLIE ⭐ 5
-- [mcp-dotnet-samples](https://github.com/microsoft) - A comprehensive set of samples of creating and using MCP servers and clients with .NET ⭐ 156
-- [skills](https://github.com/microsoft) - Skills, MCP servers, Custom Agents, Agents.md for SDKs to ground Coding Agents ⭐ 1579
-- [azure-devops-mcp-server](https://github.com/Jordiag) - Exposes Azure DevOps functionality via MCP: Boards, Repos, Pipelines, Artifacts, Test Plans, and Wiki tools for AI agents. ⭐ 13
+- [cc-devops-skills](https://github.com/akin-ozer) - No description ⭐ 94
+- [xCloud-Docker-Deploy-Skill](https://github.com/Asif2BD) - xCloud Docker Deployment Skill ⭐ 14
+- [LMForge-End-to-End-LLMOps-Platform-for-Multi-Model-Agents](https://github.com/Haohao-end) - AI Agent Development Platform - Supports multiple models (OpenAI/DeepSeek/Wenxin/Tongyi), knowledge base management, workflow automation, and enterprise-grade security. Built with Flask + Vue3 + LangChain, featuring one-click Docker deployment. ⭐ 616
+- [mcp-grafana](https://github.com/grafana) - MCP server for Grafana ⭐ 2459
+- [tableau-mcp](https://github.com/tableau) - Tableau's official MCP Server. Helping Agents see and understand data. ⭐ 190
+- [remarkable-mcp](https://github.com/SamMorrowDrums) - MCP server for accessing reMarkable tablet data - sync files, extract text from highlights, and browse your reMarkable cloud ⭐ 65
+- [mcp-devtools](https://github.com/sammcj) - A modular MCP server that provides commonly used developer tools for AI coding agents ⭐ 127
+- [tripgo-mcp-server](https://github.com/skedgo) - MCP server for TripGo's multi-modal routing ⭐ 4
+- [EODHD_MCP_server](https://github.com/Enlavan) - MCP server to connect LLM with EODHD API ⭐ 4
+- [machbase-mcp-server](https://github.com/machbase) - No description ⭐ 7
+- [openrouter-deep-research-mcp](https://github.com/wheattoast11) - A multi-agent research MCP server + mini client adapter - orchestrates a net of async agents or streaming swarm to conduct ensemble consensus-backed research. Each task builds its own indexed pglite database on the fly in web assembly. Includes semantic + hybrid search, SQL execution, semaphores, prompts/resources and more ⭐ 42
+- [European-Parliament-MCP-Server](https://github.com/Hack23) - European Parliament MCP Server Model Context Protocol Server for European Parliament Open Data Providing AI assistants with structured access to parliamentary datasets ⭐ 4
+- [AgenticGoKit](https://github.com/AgenticGoKit) - Open-source Agentic AI framework in Go for building, orchestrating, and deploying intelligent agents. LLM-agnostic, event-driven, with multi-agent workflows, MCP tool discovery, and production-grade observability. ⭐ 108
 
 ---
 
@@ -140,8 +139,8 @@ _暂无收录_
 
 ### 当前状态
 
-- 📊 已收集仓库数: 91
-- 🕐 最后扫描: 2026-03-03 09:00:23 CST
+- 📊 已收集仓库数: 104
+- 🕐 最后扫描: 2026-03-04 09:00:23 CST
 - 🔄 扫描频率: 每天一次 (09:00 CST)
 
 ### 技术栈
