@@ -2,7 +2,7 @@
 
 > 自动收集的DevOps和云原生领域优秀Skills/MCP仓库
 > 
-> 最后更新：2026-03-07 09:00:20 CST
+> 最后更新：2026-03-17 23:07:30 CST
 
 ---
 
@@ -25,8 +25,20 @@
 
 本次扫描新发现的仓库：
 
-- [agentplane](https://github.com/basilisk-labs) - Governed CLI framework for deterministic, auditable AI agent workflows ⭐ 31
-- [automation-laravel](https://github.com/liberu-automation) - Automatic provisioning system written in Laravel 12 / PHP 8.5 using Filament 5 ⭐ 35
+- [esc-skills](https://github.com/guilhermemarketing) - 🧠 ESC Skills — Coleção de skills para agentes AI focadas em desenvolvimento web, DevOps, design, SEO, performance e arquitetura. ⭐ 18
+- [DevOps-pwSkills-January](https://github.com/sidoncode) - No description ⭐ 7
+- [agent-bundle](https://github.com/yujiachen-y) - Bundle agent skills into a single deployable agent — sandboxed execution, token-scoped data access, type-safe build output. ⭐ 9
+- [managed-kubernetes-auditing-toolkit](https://github.com/DataDog) - All-in-one auditing toolkit for identifying common security issues in managed Kubernetes environments. Currently supports Amazon EKS. ⭐ 370
+- [justoneapi-mcp](https://github.com/justoneapi) - Production-ready MCP server exposing JustOneAPI endpoints to AI agents with raw JSON responses. ⭐ 6
+- [inspector](https://github.com/mcp-use) - Modern MCP Inspector for remote mcp servers with support for Apps SDK ⭐ 13
+- [toolhive-registry-server](https://github.com/stacklok) - An API server that implements the official MCP Registry API, providing standardised access to MCP servers from multiple backends, including file-based and other API-compliant registries. ⭐ 14
+- [qase-mcp-server](https://github.com/qase-tms) - An official Qase MCP server ⭐ 23
+- [awesome-mcp](https://github.com/timunbasah3) - 🚀 Discover and explore a curated list of MCP servers, tools, and resources for AI assistants, enhancing your development and productivity. ⭐ 10
+- [remnote-mcp-server](https://github.com/robert7) - RemNote MCP server ⭐ 7
+- [mcp-servers-hub](https://github.com/apappascs) - Discover the most comprehensive and up-to-date collection of MCP servers in the market. This repository serves as a centralized hub, offering an extensive catalog of open-source and proprietary MCP servers, complete with features, documentation links, and contributors. ⭐ 314
+- [azure-skills](https://github.com/microsoft) - Official agent plugin providing skills and MCP server configurations for Azure scenarios. ⭐ 395
+- [teamcity-mcp](https://github.com/Daghis) - Model Context Protocol (MCP) server for JetBrains TeamCity: control builds, tests, agents and configs from AI coding assistants. ⭐ 22
+- [FrontAgent](https://github.com/ceilf6) - AI agent platform for frontend engineering with SDD constraints & MCP-controlled automation. | 面向前端工程的企业级 AI Agent 平台 ⭐ 88
 
 ---
 
@@ -128,8 +140,8 @@ _暂无收录_
 
 ### 当前状态
 
-- 📊 已收集仓库数: 108
-- 🕐 最后扫描: 2026-03-07 09:00:20 CST
+- 📊 已收集仓库数: 124
+- 🕐 最后扫描: 2026-03-17 23:07:30 CST
 - 🔄 扫描频率: 每天一次 (09:00 CST)
 
 ### 技术栈
