@@ -107,6 +107,7 @@
 ## ☸️ Kubernetes
 
 - **[kubernetes-mcp-server](https://github.com/alexei-led/kubernetes-mcp-server)** - Kubernetes MCP server for natural language K8s operations
+- **[kubestellar-console](https://github.com/kubestellar/console)** - Multi-cluster Kubernetes dashboard with AI-powered operations and MCP server for natural-language cluster management
 - **[kagent](https://github.com/kagent-dev/kagent)** - Kubernetes Agent for AI-driven operations
 - **[keptn/lifecycle-toolkit](https://github.com/keptn/lifecycle-toolkit)** - Kubernetes application lifecycle management
 - **[kompose](https://github.com/kubernetes/kompose)** ⭐ 10,000+ - Docker Compose to Kubernetes converter
