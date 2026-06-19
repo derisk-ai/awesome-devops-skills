@@ -141,6 +141,7 @@
 - **[grafana](https://github.com/grafana/grafana)** ⭐ 63,000+ - Visualization platform
 - **[jaeger](https://github.com/jaegertracing/jaeger)** ⭐ 20,000+ - Distributed tracing
 - **[loki](https://github.com/grafana/loki)** ⭐ 23,000+ - Log aggregation
+- **[Middleware](https://github.com/middleware-labs/)** - Fill-stack observability and Monitoring 
 - **[miiflow-agent](https://github.com/MiiFlow/miiflow-agent)** - Observability agent
 
 ---
